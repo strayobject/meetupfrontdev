@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row"><div class="col-mg-12">&nbsp;</div></div>
+  <!-- Example row of columns -->
+  <div class="row" *ngFor="let venue of venues">
+    <div class="col-md-4">
+      <h2>{{venue.name}}</h2>
+      <p>{{venue.description}}</p>
+      <p>{{venue.latitude}}</p>
+      <p>{{venue.longitude}}</p>
+      <p>{{venue.address_line}}</p>
+      <p>{{venue.address_line1}}</p>
+      <p>{{venue.address_line2}}</p>
+      <p>{{venue.town}}</p>
+      <p>{{venue.country_code}}</p>
+
+    </div>
+  </div>
+</div>

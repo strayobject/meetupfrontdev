@@ -1,0 +1,9 @@
+
+<div class="row" *ngFor="let sponsor of sponsors">
+  <div class="col-md-4">
+    <h2>{{sponsor.name}}</h2>
+    <p><a class="btn btn-secondary" href="{{sponsor.link_to_url}}" role="button">
+      <img src="{{sponsor.image_url}}" alt="Logo of {{sponsor.name}}">
+    </a></p>
+  </div>
+</div>

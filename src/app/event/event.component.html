@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row"><div class="col-mg-12">&nbsp;</div></div>
+  <!-- Example row of columns -->
+  <div class="row" *ngFor="let event of events">
+    <div class="col-md-4">
+      <h2>{{event.title}}</h2>
+      <p>{{event.description}}</p>
+      <p>{{event.format}}</p>
+      <p>{{event.tags}}</p>
+      <p>{{event.date.date}}</p>
+    </div>
+  </div>
+</div>

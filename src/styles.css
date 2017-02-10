@@ -1,1 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    padding-top: 9.5rem;
+    background-color: rgb(157,200,190);
+    font-family: 'latoregular', sans-serif;
+    text-shadow: 0 1px 2px rgba(30,30,30,0.5);
+}
+
+#top-nav, .navbar-nav, .dropdown-item {
+    text-align:right;
+}
+
+.navbar-toggler {
+    margin-top: 10px;
+}
+
+nav, footer {
+    background-color: rgb(47,146,151);
+    /*background-color: rgba(0,124,133,0.7);*/
+}
+
+.navbar-brand {
+    padding:10px;
+    margin-right:70px;
+}
+
+.navbar-brand h1 {
+    font-size: 1.3em;
+    color: rgb(255,204,0);
+    line-height: 45px;
+}
+
+.navbar-brand img {
+    position: relative;
+    float:left;
+    margin: -8px 20px 0 0;
+}
+
+article {
+    background: rgba(10,10,10,0.2);
+    padding:20px;
+    color: rgb(255,255,255);
+}
+
+article h2, article h3, article h4 {
+    color:rgb(60,60,60);
+}
+
+a, a:hover {
+    color:rgb(0,124,133);
+    text-shadow: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,3 +1,51 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#top-nav" aria-controls="top-nav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" routerLink="/">
+    <img src="/assets/g-shield-2-small.png"/>
+    <h1>{{brand}}</h1>
+  </a>
+
+  <div class="collapse navbar-collapse" id="top-nav">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="nav-events" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" routerLinkActive="active">Events</a>
+        <div class="dropdown-menu" aria-labelledby="nav-events">
+          <a class="dropdown-item" routerLink="/calendar">Calendar</a>
+          <a class="dropdown-item" routerLink="/speakers">Speakers</a>
+          <a class="dropdown-item" routerLink="/talks">Talks</a>
+        </div>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/sponsors">Sponsors <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/venues">Venues</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/becomeaspeaker">Become a speaker</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/about">About | Agenda | CoC</a>
+      </li>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" routerLink="/contact">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container wrapper">
+  <div class="row">
+    <div class="col-md-8">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-md-4">
+      <my-sponsors></my-sponsors>
+    </div>
+  </div>
+</div>
+<hr>
+<footer>
+  <p>&copy; {{brand}} 2017</p>
+</footer>
